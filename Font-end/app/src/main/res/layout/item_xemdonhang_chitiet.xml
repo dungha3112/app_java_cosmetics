@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/item_xemdonhang_Imagechitiet"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@null"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_baseline_attach_money_24" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/item_xemdonhang_Imagechitiet">
+                <TextView
+                    android:id="@+id/item_xemdonhang_Tenspchitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nước hoa"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#505050"/>
+                <TextView
+                    android:id="@+id/item_xemdonhang_SLspchitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng: 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/item_xemdonhang_Giaspchitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giá : 25000đ"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

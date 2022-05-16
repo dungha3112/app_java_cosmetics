@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageItemLoaiSP_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_rperm_media"/>
+        <TextView
+            android:id="@+id/txtItemLoaiSP_TenSP"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Nước hoa"
+            android:textColor="#FF0000"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+</LinearLayout>

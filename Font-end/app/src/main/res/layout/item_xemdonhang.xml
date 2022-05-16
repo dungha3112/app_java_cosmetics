@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="8dp"
+        app:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:id="@+id/iddonhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="don hang : 123"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtngayDatHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Ngày đặt hàng"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtTongSoLuongDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng số lượng: 5"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtTongTienDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tong tien : 25000d"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDonHang_ChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/cardView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

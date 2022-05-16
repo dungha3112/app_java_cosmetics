@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageAllItemSP_image"
+                app:cardCornerRadius="16dp"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:src="@drawable/ic_rperm_media" />
+            <TextView
+                android:id="@+id/txtAllItemSP_TenSP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Nước hoa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#505050"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/txtAllItemSP_GiaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá: 25000đ"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#FF0000"
+                android:gravity="center|bottom"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/icon_new"
+            android:layout_gravity="top|right"
+            android:background="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
